@@ -1,0 +1,20 @@
+Card Stripe Examiner
+License
+
+Permission is hereby granted to law-enforcement agencies, digital-forensic analysts, and authorized investigative personnel ("Authorized Users") to use and copy Card Stripe Examiner for the purpose of criminal investigations, evidence review, training, or internal operational use. That use includes the review of magnetic-stripe cards suspected of being cloned or fraudulent.
+
+The following conditions apply:
+
+Redistribution: Card Stripe Examiner may not be sold, published, or redistributed to the general public. Redistribution outside an authorized agency requires written permission from the developer.
+
+No Warranty: Card Stripe Examiner is provided "AS IS," without warranty of any kind, express or implied, including but not limited to the warranties of accuracy, completeness, performance, non-infringement, or fitness for a particular purpose. The developer shall not be liable for any claim, damages, or other liability arising from the use of this software, including the review of magnetic-stripe evidence, issuer lookups, comparisons, or reports produced by the program.
+
+Evidence Integrity: Users are responsible for maintaining forensic integrity and chain of custody when handling evidence. Card Stripe Examiner does not write or encode a magnetic stripe, and it does not modify an imported photograph's original file. The program is intended only for analysis and review. A report records what was read and what the examiner entered. It does not, by itself, determine that a card is cloned, counterfeit, or fraudulent. Users remain responsible for exhibit labeling, the accuracy of any comparison with the printed card, and any conclusion drawn from the results.
+
+Modifications: Agencies and investigators may modify the software for internal purposes. Modified versions may not be publicly distributed without permission from the developer.
+
+Logging & Privacy: Case files, photographs, reports, spreadsheets, and issuer packets may contain full account numbers, cardholder names, and other sensitive or personally identifiable information. Users are responsible for controlling those files, and any other output generated during use, to prevent unauthorized disclosure. An optional online issuer lookup transmits only the first 6 or 8 digits of an account number, and only after the user confirms that transmission. The remainder of the account, the name, the expiration, and the case stay on the computer.
+
+Compliance: Users agree to comply with all applicable laws, departmental policies, and legal requirements when using the software.
+
+By using this software, the user acknowledges that they have read, understood, and agreed to the above terms.
