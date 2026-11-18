@@ -1,0 +1,6 @@
+# Versions bundled in the last working build (Qt 6.11.0, Python 3.13).
+# build.ps1 records every installed package, PyInstaller included, in requirements-lock.txt
+# and later builds install exactly those versions.
+PySide6==6.11.0
+reportlab==4.3.1
+pillow==12.3.0
