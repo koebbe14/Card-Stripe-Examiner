@@ -67,32 +67,3 @@ Unless you choose to mask them, exports contain full account numbers.
 
 **Save** puts each case in its own folder, named by case number, in `%LOCALAPPDATA%\CardStripeExaminer\Cases` (for example `C:\Users\<you>\AppData\Local\CardStripeExaminer\Cases\26-1847\`). The folder holds the case file (`26-1847.json`) and a `Photos` folder. **Case folder** opens it in File Explorer, and **Open** starts there. If a case with the same number is already saved, the program asks whether to replace it or save a separate copy (`26-1847 (2)`). A case opened from anywhere else is copied into the case store when you save it. The file you opened is not changed.
 
-## Run from source
-
-```powershell
-py -3 -m pip install -r requirements.txt
-py -3 -m card_stripe_examiner
-```
-
-## Build
-
-```powershell
-.\build.ps1
-```
-
-The first build creates a project-only Python environment in `.venv`, installs the pinned versions in `requirements.txt` plus PyInstaller, and records the exact versions in `requirements-lock.txt`. Later builds install exactly those versions. Other Python projects on the computer are not affected. Keep `requirements-lock.txt` and `CardStripeExaminer.spec` with the project. When a `tests` folder is present on the computer, the script runs those tests before building. It writes `BUILD-INFO.txt` beside the program.
-
-The program is `dist\CardStripeExaminer\CardStripeExaminer.exe`. Copy that folder to another Windows PC. Python does not need to be installed there. The same script builds `installer\CardStripeExaminer-Setup-<version>.exe` when Inno Setup 6 is installed.
-
-## Layout
-
-| Module | Purpose |
-| --- | --- |
-| `parse.py` | Track parsing, networks, Luhn, findings |
-| `session.py` | Case file, exhibits, card type, duplicates, photos |
-| `bin_lookup.py`, `offline_bins.py` | Online and offline issuer lookup |
-| `report.py`, `exports.py` | PDF report, spreadsheet, issuer packet |
-| `autosave.py`, `protect.py` | Crash recovery, encrypted token |
-| `capture.py` | Keyboard-wedge capture |
-| `main.py` | Main window |
-| `widgets.py`, `dialogs.py`, `tabs.py`, `glossary_page.py`, `workers.py` | Window parts |
